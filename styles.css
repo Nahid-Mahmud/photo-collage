@@ -1,5 +1,5 @@
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 img {
   height: 100%;
@@ -11,14 +11,37 @@ img {
   gap: 5px;
   margin-bottom: 5px;
 }
-.verticle img{
+.verticle img {
   height: calc((100% - 5px) / 2);
 }
-.row  div{
-flex: 1;
+.row div {
+  flex: 1;
 }
-.squire{
-    display: grid;
-    grid-template-columns: repeat(2,1fr) ;
-    gap: 5px;
+.squire {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+/* Responsive codes */
+
+@media screen and (max-width: 576px) {
+  .row {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        height: auto;
+      }
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+    .row {
+        flex-direction: column;
+        height: auto;
+      }
 }
